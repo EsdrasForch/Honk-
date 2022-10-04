@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08CD34A628EB94BB00B6563D /* Honk! WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 08CD34A528EB94BB00B6563D /* Honk! WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08CD34AB28EB94BF00B6563D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CD34AA28EB94BF00B6563D /* Assets.xcassets */; };
+		08CD34B128EB94BF00B6563D /* Honk! WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08CD34B028EB94BF00B6563D /* Honk! WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08CD34B628EB94BF00B6563D /* Honk_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34B528EB94BF00B6563D /* Honk_App.swift */; };
+		08CD34B828EB94BF00B6563D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34B728EB94BF00B6563D /* ContentView.swift */; };
+		08CD34BA28EB94BF00B6563D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34B928EB94BF00B6563D /* NotificationController.swift */; };
+		08CD34BC28EB94BF00B6563D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34BB28EB94BF00B6563D /* NotificationView.swift */; };
+		08CD34BE28EB94BF00B6563D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34BD28EB94BF00B6563D /* ComplicationController.swift */; };
+		08CD34C028EB94C100B6563D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CD34BF28EB94C100B6563D /* Assets.xcassets */; };
+		08CD34C328EB94C100B6563D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CD34C228EB94C100B6563D /* Preview Assets.xcassets */; };
+		08CD34CF28EB94C100B6563D /* Honk_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34CE28EB94C100B6563D /* Honk_Tests.swift */; };
+		08CD34D928EB94C100B6563D /* Honk_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34D828EB94C100B6563D /* Honk_UITests.swift */; };
+		08CD34DB28EB94C100B6563D /* Honk_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CD34DA28EB94C100B6563D /* Honk_UITestsLaunchTests.swift */; };
+		08CD34F228EBA14C00B6563D /* honk-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 08CD34F128EBA14C00B6563D /* honk-sound.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08CD34A728EB94BB00B6563D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CD349B28EB94BA00B6563D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CD34A428EB94BB00B6563D;
+			remoteInfo = "Honk! WatchKit App";
+		};
+		08CD34B228EB94BF00B6563D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CD349B28EB94BA00B6563D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CD34AF28EB94BF00B6563D;
+			remoteInfo = "Honk! WatchKit Extension";
+		};
+		08CD34CB28EB94C100B6563D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CD349B28EB94BA00B6563D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CD34AF28EB94BF00B6563D;
+			remoteInfo = "Honk! WatchKit Extension";
+		};
+		08CD34D528EB94C100B6563D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CD349B28EB94BA00B6563D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CD34A428EB94BB00B6563D;
+			remoteInfo = "Honk! WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08CD34E128EB94C100B6563D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08CD34B128EB94BF00B6563D /* Honk! WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34E528EB94C100B6563D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				08CD34A628EB94BB00B6563D /* Honk! WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08CD34A128EB94BA00B6563D /* Honk!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Honk!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CD34A528EB94BB00B6563D /* Honk! WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Honk! WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CD34AA28EB94BF00B6563D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08CD34B028EB94BF00B6563D /* Honk! WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Honk! WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CD34B528EB94BF00B6563D /* Honk_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honk_App.swift; sourceTree = "<group>"; };
+		08CD34B728EB94BF00B6563D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		08CD34B928EB94BF00B6563D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		08CD34BB28EB94BF00B6563D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		08CD34BD28EB94BF00B6563D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		08CD34BF28EB94C100B6563D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08CD34C228EB94C100B6563D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08CD34C428EB94C100B6563D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CD34C528EB94C100B6563D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		08CD34CA28EB94C100B6563D /* Honk!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Honk!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CD34CE28EB94C100B6563D /* Honk_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honk_Tests.swift; sourceTree = "<group>"; };
+		08CD34D428EB94C100B6563D /* Honk!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Honk!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CD34D828EB94C100B6563D /* Honk_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honk_UITests.swift; sourceTree = "<group>"; };
+		08CD34DA28EB94C100B6563D /* Honk_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honk_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08CD34F128EBA14C00B6563D /* honk-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "honk-sound.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08CD34AD28EB94BF00B6563D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34C728EB94C100B6563D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34D128EB94C100B6563D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CD349A28EB94BA00B6563D = {
+			isa = PBXGroup;
+			children = (
+				08CD34A928EB94BB00B6563D /* Honk! WatchKit App */,
+				08CD34B428EB94BF00B6563D /* Honk! WatchKit Extension */,
+				08CD34CD28EB94C100B6563D /* Honk!Tests */,
+				08CD34D728EB94C100B6563D /* Honk!UITests */,
+				08CD34A228EB94BA00B6563D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08CD34A228EB94BA00B6563D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34A128EB94BA00B6563D /* Honk!.app */,
+				08CD34A528EB94BB00B6563D /* Honk! WatchKit App.app */,
+				08CD34B028EB94BF00B6563D /* Honk! WatchKit Extension.appex */,
+				08CD34CA28EB94C100B6563D /* Honk!Tests.xctest */,
+				08CD34D428EB94C100B6563D /* Honk!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08CD34A928EB94BB00B6563D /* Honk! WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34AA28EB94BF00B6563D /* Assets.xcassets */,
+			);
+			path = "Honk! WatchKit App";
+			sourceTree = "<group>";
+		};
+		08CD34B428EB94BF00B6563D /* Honk! WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34F028EBA0D800B6563D /* Sounds */,
+				08CD34B528EB94BF00B6563D /* Honk_App.swift */,
+				08CD34B728EB94BF00B6563D /* ContentView.swift */,
+				08CD34B928EB94BF00B6563D /* NotificationController.swift */,
+				08CD34BB28EB94BF00B6563D /* NotificationView.swift */,
+				08CD34BD28EB94BF00B6563D /* ComplicationController.swift */,
+				08CD34BF28EB94C100B6563D /* Assets.xcassets */,
+				08CD34C428EB94C100B6563D /* Info.plist */,
+				08CD34C528EB94C100B6563D /* PushNotificationPayload.apns */,
+				08CD34C128EB94C100B6563D /* Preview Content */,
+			);
+			path = "Honk! WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		08CD34C128EB94C100B6563D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34C228EB94C100B6563D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08CD34CD28EB94C100B6563D /* Honk!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34CE28EB94C100B6563D /* Honk_Tests.swift */,
+			);
+			path = "Honk!Tests";
+			sourceTree = "<group>";
+		};
+		08CD34D728EB94C100B6563D /* Honk!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34D828EB94C100B6563D /* Honk_UITests.swift */,
+				08CD34DA28EB94C100B6563D /* Honk_UITestsLaunchTests.swift */,
+			);
+			path = "Honk!UITests";
+			sourceTree = "<group>";
+		};
+		08CD34F028EBA0D800B6563D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				08CD34F128EBA14C00B6563D /* honk-sound.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08CD34A028EB94BA00B6563D /* Honk! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CD34E628EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk!" */;
+			buildPhases = (
+				08CD349F28EB94BA00B6563D /* Resources */,
+				08CD34E528EB94C100B6563D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CD34A828EB94BB00B6563D /* PBXTargetDependency */,
+			);
+			name = "Honk!";
+			productName = "Honk!";
+			productReference = 08CD34A128EB94BA00B6563D /* Honk!.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		08CD34A428EB94BB00B6563D /* Honk! WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CD34E228EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk! WatchKit App" */;
+			buildPhases = (
+				08CD34A328EB94BB00B6563D /* Resources */,
+				08CD34E128EB94C100B6563D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CD34B328EB94BF00B6563D /* PBXTargetDependency */,
+			);
+			name = "Honk! WatchKit App";
+			productName = "Honk! WatchKit App";
+			productReference = 08CD34A528EB94BB00B6563D /* Honk! WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		08CD34AF28EB94BF00B6563D /* Honk! WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CD34DE28EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk! WatchKit Extension" */;
+			buildPhases = (
+				08CD34AC28EB94BF00B6563D /* Sources */,
+				08CD34AD28EB94BF00B6563D /* Frameworks */,
+				08CD34AE28EB94BF00B6563D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Honk! WatchKit Extension";
+			productName = "Honk! WatchKit Extension";
+			productReference = 08CD34B028EB94BF00B6563D /* Honk! WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		08CD34C928EB94C100B6563D /* Honk!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CD34E928EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk!Tests" */;
+			buildPhases = (
+				08CD34C628EB94C100B6563D /* Sources */,
+				08CD34C728EB94C100B6563D /* Frameworks */,
+				08CD34C828EB94C100B6563D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CD34CC28EB94C100B6563D /* PBXTargetDependency */,
+			);
+			name = "Honk!Tests";
+			productName = "Honk!Tests";
+			productReference = 08CD34CA28EB94C100B6563D /* Honk!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08CD34D328EB94C100B6563D /* Honk!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CD34EC28EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk!UITests" */;
+			buildPhases = (
+				08CD34D028EB94C100B6563D /* Sources */,
+				08CD34D128EB94C100B6563D /* Frameworks */,
+				08CD34D228EB94C100B6563D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CD34D628EB94C100B6563D /* PBXTargetDependency */,
+			);
+			name = "Honk!UITests";
+			productName = "Honk!UITests";
+			productReference = 08CD34D428EB94C100B6563D /* Honk!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08CD349B28EB94BA00B6563D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					08CD34A028EB94BA00B6563D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					08CD34A428EB94BB00B6563D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					08CD34AF28EB94BF00B6563D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					08CD34C928EB94C100B6563D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 08CD34AF28EB94BF00B6563D;
+					};
+					08CD34D328EB94C100B6563D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 08CD34A428EB94BB00B6563D;
+					};
+				};
+			};
+			buildConfigurationList = 08CD349E28EB94BA00B6563D /* Build configuration list for PBXProject "Honk!" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08CD349A28EB94BA00B6563D;
+			productRefGroup = 08CD34A228EB94BA00B6563D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08CD34A028EB94BA00B6563D /* Honk! */,
+				08CD34A428EB94BB00B6563D /* Honk! WatchKit App */,
+				08CD34AF28EB94BF00B6563D /* Honk! WatchKit Extension */,
+				08CD34C928EB94C100B6563D /* Honk!Tests */,
+				08CD34D328EB94C100B6563D /* Honk!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08CD349F28EB94BA00B6563D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34A328EB94BB00B6563D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CD34AB28EB94BF00B6563D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34AE28EB94BF00B6563D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CD34C328EB94C100B6563D /* Preview Assets.xcassets in Resources */,
+				08CD34C028EB94C100B6563D /* Assets.xcassets in Resources */,
+				08CD34F228EBA14C00B6563D /* honk-sound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34C828EB94C100B6563D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34D228EB94C100B6563D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08CD34AC28EB94BF00B6563D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CD34BA28EB94BF00B6563D /* NotificationController.swift in Sources */,
+				08CD34B828EB94BF00B6563D /* ContentView.swift in Sources */,
+				08CD34BE28EB94BF00B6563D /* ComplicationController.swift in Sources */,
+				08CD34B628EB94BF00B6563D /* Honk_App.swift in Sources */,
+				08CD34BC28EB94BF00B6563D /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34C628EB94C100B6563D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CD34CF28EB94C100B6563D /* Honk_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CD34D028EB94C100B6563D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CD34DB28EB94C100B6563D /* Honk_UITestsLaunchTests.swift in Sources */,
+				08CD34D928EB94C100B6563D /* Honk_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08CD34A828EB94BB00B6563D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CD34A428EB94BB00B6563D /* Honk! WatchKit App */;
+			targetProxy = 08CD34A728EB94BB00B6563D /* PBXContainerItemProxy */;
+		};
+		08CD34B328EB94BF00B6563D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CD34AF28EB94BF00B6563D /* Honk! WatchKit Extension */;
+			targetProxy = 08CD34B228EB94BF00B6563D /* PBXContainerItemProxy */;
+		};
+		08CD34CC28EB94C100B6563D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CD34AF28EB94BF00B6563D /* Honk! WatchKit Extension */;
+			targetProxy = 08CD34CB28EB94C100B6563D /* PBXContainerItemProxy */;
+		};
+		08CD34D628EB94C100B6563D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CD34A428EB94BB00B6563D /* Honk! WatchKit App */;
+			targetProxy = 08CD34D528EB94C100B6563D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08CD34DC28EB94C100B6563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
+			};
+			name = Debug;
+		};
+		08CD34DD28EB94C100B6563D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
+			};
+			name = Release;
+		};
+		08CD34DF28EB94C100B6563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Honk! WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F388F253QQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Honk! WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Honk! WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		08CD34E028EB94C100B6563D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Honk! WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F388F253QQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Honk! WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Honk! WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		08CD34E328EB94C100B6563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Honk__WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Honk! WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		08CD34E428EB94C100B6563D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Honk__WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Honk! WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		08CD34E728EB94C100B6563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		08CD34E828EB94C100B6563D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		08CD34EA28EB94C100B6563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honk! WatchKit Extension.appex/Honk! WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		08CD34EB28EB94C100B6563D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Honk! WatchKit Extension.appex/Honk! WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		08CD34ED28EB94C100B6563D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Honk! WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		08CD34EE28EB94C100B6563D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F388F253QQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "esdrasforch.Honk-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Honk! WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08CD349E28EB94BA00B6563D /* Build configuration list for PBXProject "Honk!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CD34DC28EB94C100B6563D /* Debug */,
+				08CD34DD28EB94C100B6563D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CD34DE28EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk! WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CD34DF28EB94C100B6563D /* Debug */,
+				08CD34E028EB94C100B6563D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CD34E228EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk! WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CD34E328EB94C100B6563D /* Debug */,
+				08CD34E428EB94C100B6563D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CD34E628EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CD34E728EB94C100B6563D /* Debug */,
+				08CD34E828EB94C100B6563D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CD34E928EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CD34EA28EB94C100B6563D /* Debug */,
+				08CD34EB28EB94C100B6563D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CD34EC28EB94C100B6563D /* Build configuration list for PBXNativeTarget "Honk!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CD34ED28EB94C100B6563D /* Debug */,
+				08CD34EE28EB94C100B6563D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08CD349B28EB94BA00B6563D /* Project object */;
+}
